@@ -38,7 +38,7 @@ with(useful,plot(DnT,Global_active_power,type = "l",main = "",xlab = "",ylab = "
 with(useful,plot(DnT,Sub_metering_1,type = "l",xlab = "",ylab = "Energy sub metering"))
   lines(useful$DnT,useful$Sub_metering_2,col="red")
   lines(useful$DnT,useful$Sub_metering_3,col="blue")
-  legend("topright",lty = c(1,1,1),col=c("black","red","blue"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+  legend("topright",bty="n",lty = c(1,1,1),col=c("black","red","blue"),legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 ##3rd Plot
 with(useful,plot(DnT,Voltage,type="l",xlab = "datetime"))
